@@ -18,7 +18,9 @@ body{
 
 a{
     text-decoration: none;
-    color:#d3e8f8;
+    color: #eaddf0;
+    margin-left: 10px;
+    font-size: 1.2rem;
     
 }
 
@@ -27,8 +29,19 @@ header{
    gap: 20px; 
    padding: 24px;
    background-color: #000000;
+
    
 
+}
+
+.img{
+    border-radius: 10px;
+    box-shadow: 0 4px 9px rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+}
+
+.img:hover{
+    transform: translateY(-10px);
 }
 
 .cabecalho{
@@ -59,19 +72,22 @@ header{
 }
 
 .card{
-    width: 350px;
+    width: 450px;
     height: 300px;
     border-radius: 10px;
     box-shadow: 0 4px 9px rgb(0, 0, 0);
     overflow: hidden;
     transition: transform 0.3s ease;
     font-family: "Montserrat", sans-serif;
+    
 }
 
 .paragrafo{
     text-align: center;
     padding: 0 15px;
     font-size: 18px;
+    color: #000000;
+    font-weight: bold;
 }
 
 .card:hover{
@@ -81,7 +97,7 @@ header{
 h2{
     text-align: center;
     background-color: #000000;
-    color: #ebd9fa;
+    color: #eaddf0;
     padding: 15px 0;
     margin: 0;
 
@@ -201,22 +217,42 @@ footer{
 
 
 @media screen and (max-width: 768px) {
-    .card {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .colecao-nova{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    .card-esquerda{
-        padding: 0;
-    }
+
     .foto img{
         width: 100%;
         max-width: 300px;
         height: auto;
     }
 
+    .imagens{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 300px;
+       
+    }
+    .card-esquerda{
+        padding-right: 0;
+        padding-left: 0;
+      
+    }
+
+    .form{
+        width: 100%;
+        max-width: 300px;
+    }
+
+       
+    .colecao-nova{
+        flex-direction: column;
+    }
+    #mensagem{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
 }
+
