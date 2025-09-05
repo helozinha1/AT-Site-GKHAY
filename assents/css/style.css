@@ -128,6 +128,16 @@ h2{
 .foto{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.card-direita{
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 9px rgb(5, 5, 5);
+}
+.card-direita:hover{
+    transform: translateY(-10px);
 }
 
 .card-esquerda{
@@ -136,6 +146,7 @@ h2{
     text-align: left;
     padding-right: 100px;
     padding-left: 250px;
+    margin-top: 50px;
 }
 
 .foto img{
