@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    background-color:#eaddf0 ;
+}
+
+.navegacao{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: auto;  
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color:#d3e8f8;
+    
+}
+
+header{
+   display: flex;
+   gap: 20px; 
+   padding: 24px;
+   background-color: #000000;
+   
+
+}
+
+.cabecalho{
+    display: flex;
+    gap: 15px;
+    
+   
+}
+
+.logo{
+    width: 270px;
+    height: 75px;
+    margin-left: -50px;
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.sobre-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.card{
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 9px rgb(0, 0, 0);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    font-family: "Montserrat", sans-serif;
+}
+
+.paragrafo{
+    text-align: center;
+    padding: 0 15px;
+    font-size: 18px;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h2{
+    text-align: center;
+    background-color: #000000;
+    color: #ebd9fa;
+    padding: 15px 0;
+    margin: 0;
+
+}
+
+.colecao-nova{
+    background-color: #000000;
+    color: #ebd9fa;
+    padding: 50px 20px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.titulo{
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.paragrafo1{
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+}
+
+.card-esquerda{
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 250px;
+}
+
+.foto img{
+    width: 400px;
+    height: auto;
+}
+
+
+.contato{
+    color: #ebd9fa;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  
+   
+}
+#mensagem{
+   color: #030303;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 500px;
+    
+
+}
+ .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #000000;
+    padding: 50px 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 9px rgb(0, 0, 0);
+}
+
+#cnt{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+        width: 300px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+}   
+
+button{
+        background-color: #ebd9fa;
+        color: #000000;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+}
+
+
+footer{
+    background-color: #000000;
+    color: #ebd9fa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .colecao-nova{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .card-esquerda{
+        padding: 0;
+    }
+    .foto img{
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+}
